@@ -1,0 +1,58 @@
+<div data-role="page" data-control-title="Accueil" id="accueil">
+    <script src="js/tachesnow.js"></script>   
+    <script src="js/submenu.js"></script>      
+    <div data-theme="a" data-position="fixed" data-role="header">
+        <a data-role="button" data-rel="back" data-theme="b" href="#accueil" data-icon="back"
+           data-iconpos="left" class="ui-btn-left">
+            Retour
+        </a>
+        <h3>
+            GeoTask
+        </h3>
+    </div>
+    <div data-role="content" id="mestachesdiv">
+        <h3>
+            Mes tâches
+        </h3>
+        <ul data-role="listview" data-divider-theme="e" data-inset="true" id="listMesTaches">                            
+        </ul>
+    </div>
+    <div data-role="content" id="mestachesmessagediv">
+        <div data-controltype="textblock">
+            <p style="text-align: center;" data-mce-style="text-align: center;">
+                <span style="color: rgb(153, 204, 0);" data-mce-style="color: #99cc00;">
+                    <b>
+                        Félicitation vous avez terminez toutes vos tâches
+                    </b>
+                </span>
+            </p>
+        </div>
+        <div style=" text-align:center" data-controltype="image">
+            <img style="width: 100%; height: 100%" src="img/application.png">
+        </div>
+    </div>
+    <div data-role="tabbar"  data-position="fixed" data-position="fixed" data-iconpos="top" data-theme="a">
+        <ul>
+            <li>
+                <a href="javascript:void(0)" class="accueil" data-transition="fade" data-theme="" data-icon="alert">
+                    Mes tâches
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="taches" data-transition="fade" data-theme="" data-icon="check">
+                    Tâches affectées
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="contacts" data-transition="fade" data-theme="" data-icon="star">
+                    Tâches terminées
+                </a>
+            </li>
+            <!-- <li>
+                <a href="javascript:void(0)" class="equipe" data-transition="fade" data-theme="" data-icon="home">
+                    Equipe
+                </a>
+            </li> -->
+        </ul>
+    </div>
+</div>  

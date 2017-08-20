@@ -1,0 +1,45 @@
+<div data-role="page" data-control-title="Messages" id="chat" class="short-pull-demo-page">
+    <link href="css/jquery.mobile.iscrollview.css" media="screen" rel="stylesheet" type="text/css" />    
+    <link href="css/jquery.mobile.iscrollview.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/layer_xy_hack.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.iscrollview.js"></script>
+    <script type="text/javascript" src="js/chat.js"></script>    
+    <div data-role="panel" id="panelChat" data-position="right" data-display="overlay" 
+         data-theme="b">
+        <textarea class="textareafix" id="messagetext" rows="5" placeholder="Entrer ici votre texte"></textarea>
+        <button id="envoyermessagetext" data-theme="a">Envoyer</button>
+        <button id="envoyeraudio" data-theme="b">Audio</button>
+        <button id="envoyervideo" data-theme="b">Vidéo</button>
+        <button id="envoyerimage" data-theme="b">Image</button>
+    </div>  
+    <div data-theme="a" data-position="fixed" data-role="header">
+        <a data-role="button" data-rel="back" data-theme="b" href="#accueil" data-icon="back"
+           data-iconpos="left" class="ui-btn-left">
+            Retour
+        </a>
+        <h3>
+            GeoTask
+        </h3>
+        <a data-role="button" data-theme="b" href="#panelChat" data-icon="grid"
+           data-iconpos="left" class="ui-btn-right">
+            Envoyer message
+        </a>
+    </div>
+    <div data-iscroll="" data-role="content" >
+        <div class="iscroll-pulldown">
+            <span class="iscroll-pull-icon"></span><span class="iscroll-pull-label" data-iscroll-loading-text="Chargement..." data-iscroll-pulled-text="Anciens messages...">Rafraichissemnt...</span>
+        </div>
+        <ul id="listMessages" data-role="listview" data-inset="true" >            
+        </ul>                 
+    </div> 
+    <div id="dialogImage" data-role="popup" >
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Fermer</a>
+        <img  id="imageZoom" src="img/chargement.gif" style="max-height:512px;" alt="Chargement image...">        
+    </div> 
+    <div id="popupVideo" data-role="popup" >
+
+        <video width="360" height="240" controls preload="metadata" poster="img/cine.jpg" id="videoReader" controls src="">Chargement de la vidéo</video>
+     
+    </div> 
+</div>          

@@ -1,0 +1,63 @@
+<div data-role="page" data-control-title="Planification" id="planification">
+            <div data-theme="a" data-position="fixed" data-role="header">
+                <a data-role="button" data-rel="back" data-theme="b" href="#accueil" data-icon="back"
+                   data-iconpos="left" class="ui-btn-left">
+                    Retour
+                </a>
+                <h3>
+                    GeoTask
+                </h3>
+            </div>
+            <div data-role="content">
+                <h4>
+                    Plannification d une nouvelle tâche
+                </h4>
+                <form action="" method="POST">
+                    <input type="hidden" name="agentcode" value="XYZT">
+                    <div data-role="fieldcontain" data-controltype="textinput">
+                        <input name="" id="textinput1" placeholder="Client" value="" type="text">
+                    </div>
+                    <div data-role="fieldcontain" data-controltype="textinput">
+                        <input name="" id="textinput2" placeholder="Contact" value="" type="text">
+                    </div>
+                    <div data-role="fieldcontain" data-controltype="textinput">
+                        <input name="" id="textinput3" placeholder="Telephone" value="" type="tel">
+                    </div>
+                    <div data-role="fieldcontain" data-controltype="dateinput">
+                        <input name="" id="dateinput1" placeholder="Date" value="" type="date">
+                    </div>
+                    <div data-role="fieldcontain" data-controltype="textinput">
+                        <input name="" id="textinput4" placeholder="Heure" value="" type="datetime">
+                    </div>
+                    <div data-role="fieldcontain" data-controltype="textinput">
+                        <input name="" id="textinput5" placeholder="Description" value="" type="text">
+                    </div>
+                    <input type="submit" data-theme="b" data-icon="plus" data-iconpos="left"
+                           value="Soumettre">
+                </form>
+            </div>
+            <div data-role="tabbar" data-position="fixed" data-iconpos="top" data-theme="a">
+                <ul>
+                    <li>
+                        <a href="#accueil" class="accueil" data-transition="fade" data-theme="" data-icon="alert">
+                            Mes tâches
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#taches" class="taches" data-transition="fade" data-theme="" data-icon="check">
+                            Tâches affectées
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="contacts" data-transition="fade" data-theme="" data-icon="star">
+                            Tâches terminées
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#equipe" class="equipe" data-transition="fade" data-theme="" data-icon="home">
+                            Equipe
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>

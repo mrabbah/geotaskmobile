@@ -1,0 +1,165 @@
+<div data-role="page" data-control-title="Tâche" id="tache" class="short-pull-demo-page">   
+    <!--<script src="js/gmap3.min.js"></script>-->
+    <script src="js/tache.js"></script>
+    <script type="text/javascript" src="js/juimap/jquery.ui.map.js"></script>
+    <script type="text/javascript" src="js/juimap/jquery.ui.map.services.js"></script>
+    <script type="text/javascript" src="js/juimap/jquery.ui.map.extensions.js"></script>
+    <div data-role="panel" id="panel1" data-position="left" data-display="push"
+         data-theme="b">
+        <ul data-role="listview" data-divider-theme="a" data-inset="false">
+            <li data-role="list-divider" role="heading">
+                Actions
+            </li>
+            <li data-theme="b">
+                <a href="javascript:void(0)" id="appelercontact">
+                    Appeler contact
+                    <span id="gsmcontact2" class="ui-li-count">                        
+                    </span>
+                </a>
+            </li>
+            <li data-theme="b">
+                <a href="javascript:void(0)" class="correctposition">
+                    Corriger position
+                </a>
+            </li>
+            <li data-theme="b" id="lichercheriteneraire">
+                <a href="javascript:void(0)" id="chercheriteneraire" data-transition="slide">
+                    Chercher itinéraire
+                </a>
+            </li>
+            <li data-theme="b" id="licacheriteneraire">
+                <a href="javascript:void(0)" id="cacheriteneraire" data-transition="slide">
+                    Cacher itinéraire
+                </a>
+            </li>
+            <li id="liacceptermission" data-theme="b">
+                <a href="javascript:void(0)" id="arriver" data-transition="slide">
+                    Arriver
+                </a>
+            </li>
+            <li id="lideclinermission" data-theme="b">
+                <a href="javascript:void(0)" id="declinermission" data-transition="slide">
+                    Annuler la tâche
+                </a>
+            </li>
+            <li id="lideclinercourse" data-theme="b">
+                <a href="javascript:void(0)" id="declinercourse" data-transition="slide">
+                    Annuler la course
+                </a>
+            </li>
+            <li id="licomencermission" data-theme="b">
+                <a href="javascript:void(0)" id="comencermission" data-transition="slide">
+                    Términer
+                </a>
+            </li>            
+        </ul>
+    </div>    
+    <div data-theme="a" data-position="fixed" data-role="header">
+        <a data-role="button" data-rel="back" data-theme="b" href="#accueil" data-icon="back"
+           data-iconpos="left" class="ui-btn-left">
+            Retour
+        </a>
+        <h3>
+            GeoTask
+        </h3>
+        <a data-role="button" data-theme="b" href="#panel1" data-icon="grid"
+           data-iconpos="left" class="ui-btn-right">
+            Actions
+        </a>
+    </div>
+    <div  data-role="content">                
+        <div id="googlemapsjs1" style="width: 100%; height: 350px; margin-left: auto; margin-right: auto">                    
+        </div>                
+        <div id="directions">                    
+        </div>                
+        <div data-controltype="textblock">
+            <p>
+                <span style="text-decoration: underline;">
+                    <b>
+                        Description mission:
+                    </b>
+                </span>
+                <br>
+            </p>
+            <p>
+                <span id="descriptiontache"></span>
+            </p>                    
+            <p>
+                <span style="text-decoration: underline;">
+                    <strong>
+                        Adresse
+                    </strong>
+                    :
+                </span>
+                <br>
+            </p>
+            <p>
+                <span id="adressetache" ></span>
+                <br>
+            </p>
+            <p>
+                <span style="text-decoration: underline;">
+                    <strong>
+                        Client:
+                    </strong>
+                </span>
+                <br>
+            </p>
+            <p>
+                <span id="nomcontact"></span>
+                <br>
+            </p>
+            <p>
+                <span >
+                    <span data-mce-style="text-decoration: underline; color: #000000;" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                        <strong>
+                            <span data-mce-style="text-decoration: underline;" style="text-decoration: underline;">
+                                GSM :
+                            </span>
+                        </strong>
+                    </span>
+                    <span id="gsmcontact1"></span>
+                </span>
+                <br>
+            </p>
+            <p>
+                <span >
+                    <span data-mce-style="text-decoration: underline; color: #000000;" style="text-decoration: underline; color: rgb(0, 0, 0);">
+                        <strong>
+                            <span data-mce-style="text-decoration: underline;" style="text-decoration: underline;">
+                                Tranche horaire :
+                            </span>
+                        </strong>
+                    </span>
+                    <span id="tranchehoraire"></span>
+                </span>
+                <br>
+            </p>
+            <a href="javascript:void(0)" id="startchat" data-role="button" data-theme="b" data-icon="edit" >Chat</a>
+        </div>
+    </div>
+    <div data-role="tabbar" data-position="fixed" data-iconpos="top" data-theme="a">
+        <ul>
+            <li>
+                <a href="javascript:void(0)" class="accueil" data-transition="fade" data-theme="" data-icon="alert">
+                    Mes tâches
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="taches" data-transition="fade" data-theme="" data-icon="check">
+                    Tâches affectées
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="contacts" data-transition="fade" data-theme="" data-icon="star">
+                    Tâches terminées
+                </a>
+            </li>
+            <!-- <li>
+                <a class="equipe" href="javascript:void(0)" data-transition="fade" data-theme="" data-icon="home">
+                    Equipe
+                </a>
+            </li> -->
+        </ul>
+    </div>
+</div>                  
